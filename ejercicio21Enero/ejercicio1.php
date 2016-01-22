@@ -13,13 +13,14 @@ while($inicio<=$fin){
 
 }
 
-
+echo "<br>";
 echo "inicio en 16 y termino en 10 <br>";
 while($inicio2>=$fin){
         $tem=$tabla*$inicio2;
         echo "$tabla*$inicio2=$tem <br>";
         $inicio2--;
-
 }
+
+
 
 ?>
