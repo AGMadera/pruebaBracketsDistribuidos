@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <title>Formulario Alta</title>
+</head>
+
+<body>
+<!--
+<form id="form1" name="form1" method="post" action="../Controlador/controladorGuardar.php" enctype="multipart/form-data">
+
+    <p>
+        Nombre:
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese el Nombre" required/>
+    <p>
+        Correo:
+        <input type="email" name="correo" id="correo" placeholder="Ingresa el email"  required/>
+
+    <p>
+        Imagen:
+        <input type="file" name="imagen" id="imagen"  required/>
+
+    <p>
+
+        <input type="submit" name="guardar" id="guardar" value="guardar" />
+    </p>
+</form>
+-->
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Proyecto Aplicacione Distribuidas</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="pruebaindex.html">Home</a></li>
+                <li class="active"><a href="#">Alta</a></li>
+                <li><a href="buscarUsuario.html">Buscar usuario</a></li>
+                <li><a href="mostrarTodos.html">Ver usuarios</a></li>
+                <li><a href="borrar.html">Borrar usuario</a></li>
+                <li><a href="formulario.html">Nueva amortizacion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Guardar usuario</div>
+                <div class="panel-body">
+                    <!--Aqui -->    <form role="form" method="post" action="../Controlador/controladorGuardar.php" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese el Nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <div class="input-group" >
+                            <span class="input-group-addon"></span>
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder="Ingresa el email"  required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="imagen">Foto:</label>
+                        <div class="input-group" >
+
+                            <input type="file" class="form-control" name="imagen" id="imagen"  required/>
+
+                        </div>
+                    </div>
+
+
+                    <input type="submit" value="guardar" class="btn btn-lg btn-primary btn-block" name="guardar" />
+
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

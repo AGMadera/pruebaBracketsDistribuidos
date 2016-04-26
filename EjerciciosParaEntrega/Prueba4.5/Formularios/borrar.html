@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <title>Formulario Borrar Usuario</title>
+</head>
+
+<body>
+<!--
+<form id="form1" name="form1" method="post" action="../Controlador/controladorBorrar.php">
+
+    <p>
+        Id para borrar:
+        <input type="text" name="idUsuarioB" id="idUsuarioB" placeholder="id para borrar" required/>
+
+
+    <p>
+
+        <input type="submit" name="buscarU" id="buscarU" value="buscarU" />
+    </p>
+</form>
+-->
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Proyecto Aplicacione Distribuidas</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li ><a href="pruebaindex.html">Home</a></li>
+                <li ><a href="alta.html">Alta</a></li>
+                <li ><a href="buscarUsuario.html">Buscar usuario</a></li>
+                <li><a href="mostrarTodos.html">Ver usuarios</a></li>
+                <li class="active"><a href="#">Borrar usuario</a></li>
+                <li><a href="formulario.html">Nueva amortizacion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br>
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">Borrar Usuario</div>
+                <div class="panel-body">
+                    <!--Aqui -->    <form role="form" method="post" action="../Controlador/controladorBorrar.php">
+                    <div class="form-group">
+                        <label for="idUsuarioB">Id:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+
+                            <input type="text" class="form-control" name="idUsuarioB" id="idUsuarioB" placeholder="id para borrar" required>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <input type="submit" id="buscarU" value="buscarU" class="btn btn-lg btn-primary btn-block" name="buscarU" />
+
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
